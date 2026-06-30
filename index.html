@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Browser Warning Modal -->
+    <div id="browserWarning" class="browser-warning">
+        <div class="browser-warning-content">
+            <div class="warning-icon">⚠️</div>
+            <h2>Ваш браузер не поддерживается</h2>
+            <p>Этот сайт использует современные технологии, которые не поддерживаются в вашем браузере.</p>
+            <p class="warning-subtitle">Для корректного отображения сайта используйте один из следующих браузеров:</p>
+            
+            <div class="browsers-list">
+                <a href="https://www.google.com/chrome/" class="browser-item" target="_blank">
+                    <div class="browser-icon">🌐</div>
+                    <div class="browser-name">Google Chrome</div>
+                </a>
+                <a href="https://www.mozilla.org/firefox/" class="browser-item" target="_blank">
+                    <div class="browser-icon">🦊</div>
+                    <div class="browser-name">Mozilla Firefox</div>
+                </a>
+                <a href="https://www.opera.com/" class="browser-item" target="_blank">
+                    <div class="browser-icon">🔴</div>
+                    <div class="browser-name">Opera</div>
+                </a>
+                <a href="https://brave.com/" class="browser-item" target="_blank">
+                    <div class="browser-icon">🦁</div>
+                    <div class="browser-name">Brave</div>
+                </a>
+                <a href="https://vivaldi.com/" class="browser-item" target="_blank">
+                    <div class="browser-icon">🔺</div>
+                    <div class="browser-name">Vivaldi</div>
+                </a>
+            </div>
+            
+            <p class="warning-note">
+                Microsoft Edge и Internet Explorer не поддерживаются из-за ограничений совместимости.
+            </p>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header-content">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1 class="header-title">Мое Портфолио</h1>
+        </div>
+        <div class="current-company">
+            <span class="company-indicator"></span>
+            <span class="company-name">Прокрутите вниз</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Добро пожаловать</h2>
+            <p>Прокрутите вниз, чтобы увидеть мои проекты</p>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Sections -->
+    <section class="company-section" data-company="Яндекс" data-color="#ff0000">
+        <div class="company-background" style="background-image: url('images/company1-bg.jpg')"></div>
+        <div class="company-overlay"></div>
+        <div class="company-content">
+            <div class="company-info fade-in">
+                <span class="company-year">2023 - Настоящее время</span>
+                <h2 class="company-title">Яндекс</h2>
+                <h3 class="company-position">Senior Frontend Developer</h3>
+                <p class="company-description">
+                    Разработка высоконагруженных веб-приложений. Оптимизация производительности, 
+                    внедрение новых технологий, менторство junior-разработчиков.
+                </p>
+                <div class="company-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Redux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-section" data-company="VK" data-color="#0077ff">
+        <div class="company-background" style="background-image: url('images/company2-bg.jpg')"></div>
+        <div class="company-overlay"></div>
+        <div class="company-content">
+            <div class="company-info fade-in">
+                <span class="company-year">2021 - 2023</span>
+                <h2 class="company-title">VK</h2>
+                <h3 class="company-position">Frontend Developer</h3>
+                <p class="company-description">
+                    Создание пользовательских интерфейсов для социальных сервисов. 
+                    Работа с большими объемами данных, A/B тестирование, улучшение UX.
+                </p>
+                <div class="company-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SCSS</span>
+                    <span class="tech-tag">Webpack</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-section" data-company="Tinkoff" data-color="#ffdd2d">
+        <div class="company-background" style="background-image: url('images/company3-bg.jpg')"></div>
+        <div class="company-overlay"></div>
+        <div class="company-content">
+            <div class="company-info fade-in">
+                <span class="company-year">2019 - 2021</span>
+                <h2 class="company-title">Tinkoff</h2>
+                <h3 class="company-position">Junior Frontend Developer</h3>
+                <p class="company-description">
+                    Разработка интерфейсов для банковских продуктов. Интеграция с API, 
+                    работа в Agile-команде, участие в код-ревью.
+                </p>
+                <div class="company-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">Jest</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Свяжитесь со мной</h2>
+            <p>email@example.com</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
